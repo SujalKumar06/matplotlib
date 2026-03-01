@@ -1076,7 +1076,7 @@ class Text(Artist):
         .set_bbox : To change the position of the bounding box
         """
         if self._bbox_patch is None:
-            self.set_bbox(dict(facecolor=color, edgecolor=color))
+            self.set_bbox(dict(facecolor=color, edgecolor="none"))
         else:
             self._bbox_patch.update(dict(facecolor=color))
 
